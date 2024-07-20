@@ -1,0 +1,389 @@
+* {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .main-logo {
+    text-decoration: none;
+    color: #10232c;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+  
+  .navbar-links {
+    display: flex;
+    column-gap: 20px;
+  }
+  
+  .navbar-links a {
+    color: #10232c;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .navbar-links a:hover {
+    color: rgb(168, 47, 87);
+  }
+  
+  .navbar-icon {
+    display: none;
+  }
+  
+  .side-navbar {
+    background-color: black;
+    color: white;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 15px;
+    transition: 1s;
+    z-index: 3;
+  }
+  
+  .side-navbar-links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .side-navbar-links a {
+    color: white;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px 10px 20px;
+  }
+  
+  .side-navbar-links a:hover {
+    background-color: rgb(168, 47, 87);
+  }
+  
+  .icon-close {
+    text-align: right;
+  }
+  
+  .header-image {
+    width: 300px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    align-items: center;
+  }
+  
+  .header-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .header-button:hover {
+    background-color: rgb(168, 47, 87);
+    height: 40px;
+    width: 140px;
+  }
+  
+  .services {
+    padding: 15px;
+  }
+  
+  .service-container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .service-container2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .service-container2 div {
+    background-color: rgb(248, 217, 227);
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .service-container2 i {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .new-arrivals-container {
+    flex-basis: 20%;
+    position: relative;
+    margin-top: 10px;
+  }
+  
+  .new-arrivals-container img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+  }
+  
+  .new-arrivals-container button {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(245, 235, 235);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .new-arrivals-container button:hover {
+    height: 30px;
+    width: 150px;
+    background-color: rgb(168, 47, 87);
+    color: white;
+    opacity: 0.8;
+  }
+  
+  .new-arrivals {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .sub-heading {
+    padding: 15px;
+  }
+  
+  .news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .input-news-box input {
+    width: 80vw;
+    border: solid black 3px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .news-button-container button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .news-button-container button:hover {
+    background-color: rgb(168, 47, 87);
+    height: 40px;
+    width: 140px;
+  }
+  
+  .footer {
+    background-color: #10232c;
+    color: white;
+    padding: 30px;
+  }
+  
+  .footer-container h2,
+  p {
+    margin-bottom: 10px;
+  }
+  
+  .footer-icons-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .footer-icons-container i {
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    padding: 10px;
+  }
+  
+  .footer-icons-container i:hover {
+    font-size: 32px;
+    background-color: rgb(168, 47, 87);
+  }
+  
+  .footer-website p {
+    color: rgb(218, 18, 85);
+    background-color: white;
+    font-weight: 600;
+  }
+  
+  .footer-website {
+    padding-top: 10px;
+    padding-left: 30px;
+  }
+  
+  .end-card {
+    background-color: #10232c;
+    height: 50px;
+  }
+  
+  .search-section-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-section {
+    margin: 40px;
+    border: solid #10232c 3px;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+  }
+  
+  .search-section input {
+    outline: none;
+    border: none;
+    font-size: 20px;
+    width: 90%;
+  }
+  
+  .search-section i {
+    font-size: 30px;
+  }
+  
+  .collections-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+  }
+  
+  .collection {
+    flex-basis: 20%;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px;
+  }
+  
+  .collection img {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  
+  .collection img:hover {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .contact-form {
+    background-color: #10232c;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    flex-basis: 40%;
+  }
+  
+  .map{
+    flex-basis: 40%;
+    margin-top: 10px;
+  }
+  
+  .map h2{
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  
+  .map iframe{
+   width: 100%;
+  }
+  
+  .contact-form input,
+  textarea {
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    outline-color: rgb(2, 191, 248);
+  }
+  
+  .contact-name,
+  .contact-email,
+  .contact-message,
+  .contact-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-button button {
+    background-color: white;
+    color: #10232c;
+    padding: 10px 20px 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .navbar-links {
+      display: none;
+    }
+    .navbar-icon {
+      display: block;
+    }
+    .header-image {
+      display: none;
+    }
+    .service-container1 {
+      display: none;
+    }
+    .service-container2 {
+      flex-direction: column;
+    }
+    .contact-form {
+      flex-basis: 100%;
+    }
+    .map{
+      flex-basis: 100%;
+    }
+  }
